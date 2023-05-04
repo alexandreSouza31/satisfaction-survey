@@ -1,3 +1,4 @@
+import { GrFormNext, GrFormPrevious } from "react-icons/gr"; //importa os ícones
 
 import './App.css'
 
@@ -12,7 +13,18 @@ function App() {
       <main>
         <p>etapas</p>
         <form>
-
+          <div className="inputs-container"></div>
+          <div className="actions">
+            <button type='button'>
+              <GrFormPrevious />
+              <span>Voltar</span>
+            </button>
+            <button type='submit'>
+              <span>Avançar</span>
+              <GrFormNext />
+            </button>
+            
+          </div>
         </form>
       </main>
     </div>
