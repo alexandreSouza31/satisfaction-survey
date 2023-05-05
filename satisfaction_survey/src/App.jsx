@@ -27,7 +27,7 @@ function App() {
       </header>
       <main>
         <p>etapas</p>
-        <form onSubmit={(e)=>changeStep(currentStep + 1,e)}>
+        <form onSubmit={(e)=>changeStep(currentStep + 1,e)} className="form-container">
           <div className="inputs-container">{currentComponent}</div>
           <div className="actions">
             {!isFirstStep && (
