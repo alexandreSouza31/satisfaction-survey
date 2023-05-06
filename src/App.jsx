@@ -10,7 +10,6 @@ import Steps from "./components/Steps";
 //hooks
 import { useForm } from "./hooks/useForm";
 
-
 import './App.css'
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
     <div className="app">
       <header className="header">
         <h2>Deixe sua avaliação</h2>
-        <p>Obrigado por comprar conosco! Preencha o formulário abaixo para avaliar o produto:</p>
+        <p>Obrigado por comprar conosco! Preencha o formulário abaixo para avaliar a compra:</p>
       </header>
       <main className="form-container">
         <Steps currentStep={currentStep}/>

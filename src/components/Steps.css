@@ -24,3 +24,16 @@
     width: 120px;
     padding: .5rem;
 }
+
+.step svg{
+    font-size: 1.6rem;
+    margin-bottom: .2rem;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.active svg{
+    fill: #04c004;
+}
