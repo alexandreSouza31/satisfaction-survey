@@ -4,7 +4,7 @@ import {
     BsFillEmojiSmileFill,
     BsFillEmojiNeutralFill,
     BsFillEmojiFrownFill,
-} from "react-icons/bs"
+} from "react-icons/bs";
 
 import "./ReviewForm.css";
 const ReviewForm = () => {
