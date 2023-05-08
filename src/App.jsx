@@ -9,12 +9,30 @@ import Steps from "./components/Steps";
 
 //hooks
 import { useForm } from "./hooks/useForm";
+import { useState } from "react";//serve pra fazer a alteração nos dados
 
-import './App.css'
+import './App.css';
+
+const formTemplate = {
+  name: "", email: "", review: "", comment: ""
+};
 
 function App() {
+  const [data, setData] = useState(formTemplate);
 
-  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
+  const updateFieldHandler = (key, value) => {
+    setData((prev) => {
+      //vou retornar um novo objeto com com todos os itens do preview state pra não mexer com o que já está colocado,
+      //vou alterar a chave específica desse objeto(name, review, ou comment) para o valor de value.
+      return {...prev,[key]:value}
+    })
+  }
+
+  const formComponents = [//chamo a função update onde tiver input
+    <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
+    <ReviewForm data={data} updateFieldHandler={updateFieldHandler}/>,
+    <Thanks data={data} />
+  ];
   
   //vou desestruturar pra extrair cada um desses
   const { currentStep, currentComponent,changeStep, isLastStep,isFirstStep} = useForm(formComponents);
