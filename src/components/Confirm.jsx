@@ -5,7 +5,7 @@ import {
     BsFillEmojiFrownFill,
 } from "react-icons/bs";
 
-import "./Thanks.css";
+import "./Confirm.css";
 
 const emojiData = {
     usatisfied:<BsFillEmojiFrownFill/>,
@@ -14,9 +14,9 @@ const emojiData = {
     incredible:<BsFillEmojiHeartEyesFill/>,
 }
 
-const Thanks = ({data}) => {
+const Confirm = ({data}) => {
     return (
-        <div className="thanks-container">
+        <div className="confirm-container">
             <h2>Falta pouco...</h2>
             <p>
                 A sua opinião é muito importante, em breve você receberá um cupom de 
@@ -36,4 +36,4 @@ const Thanks = ({data}) => {
     );
 };
 
-export default Thanks;
+export default Confirm;

@@ -4,7 +4,7 @@ import { GrFormNext, GrFormPrevious } from "react-icons/gr"; //importa os ícone
 import { FiSend } from "react-icons/fi"
 import UserForm from "./components/UserForm";
 import ReviewForm from "./components/ReviewForm";
-import Thanks from "./components/Thanks";
+import Confirm from "./components/Confirm";
 import Steps from "./components/Steps";
 
 //hooks
@@ -31,7 +31,7 @@ function App() {
   const formComponents = [//chamo a função update onde tiver input
     <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
     <ReviewForm data={data} updateFieldHandler={updateFieldHandler}/>,
-    <Thanks data={data} />
+    <Confirm data={data} />
   ];
   
   //vou desestruturar pra extrair cada um desses
