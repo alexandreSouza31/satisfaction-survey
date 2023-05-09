@@ -1,7 +1,7 @@
 //essa é a página principal
 //importando os componentes que criei
 import { GrFormNext, GrFormPrevious } from "react-icons/gr"; //importa os ícones
-import { FiSend } from "react-icons/fi"
+import {BsFillEmojiSunglassesFill} from "react-icons/bs"
 import UserForm from "./components/UserForm";
 import ReviewForm from "./components/ReviewForm";
 import Confirm from "./components/Confirm";
@@ -31,44 +31,41 @@ function App() {
 
   const formComponents = [//chamo a função update onde tiver input
     <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
-    <ReviewForm data={data} updateFieldHandler={updateFieldHandler}/>,
+    <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
     <Confirm data={data} />,
-    <Thanks data={data}/>
+    <Thanks data={data} />
   ];
-  
+
   //vou desestruturar pra extrair cada um desses
-  const { currentStep, currentComponent,changeStep, isLastStep,isFirstStep} = useForm(formComponents);
+  const { currentStep, currentComponent, changeStep, isSecondStep, isFirstStep, isThirdStep } = useForm(formComponents);
 
   return (
     <div className="app">
       <header className="header">
         <h2>Deixe sua avaliação</h2>
-        <p>Obrigado por comprar conosco! Preencha o formulário abaixo para avaliar a compra:</p>
+        <p>Obrigado por comprar conosco! <BsFillEmojiSunglassesFill className="emoji-glasses"/></p>
       </header>
       <main className="form-container">
-        <Steps currentStep={currentStep}/>
-        <form onSubmit={(e)=>changeStep(currentStep + 1,e)} className="form">
+        <Steps currentStep={currentStep} />
+        <form onSubmit={(e) => changeStep(currentStep + 1, e)} className="form">
           <div className="inputs-container">{currentComponent}</div>
           <div className="actions">
-            {!isFirstStep && (
-              <button type='button' onClick={()=>changeStep(currentStep -1)}>
-              <GrFormPrevious />
-              <span>Voltar</span>
-            </button>
+            {!isFirstStep && !isThirdStep && (
+              <button type='button' onClick={() => changeStep(currentStep - 1)}>
+                <GrFormPrevious />
+                <span>Voltar</span>
+              </button>
             )}
-            
-            {!isLastStep ? (
+
+            {!isThirdStep ? (
               <button type='submit'>
-              <span>Avançar</span>
-              <GrFormNext />
-            </button>
+                <span>Avançar</span>
+                <GrFormNext />
+              </button>
             ) : (
-              <button type='button'>
-              <span>Enviar</span>
-              <FiSend />
-            </button>
+              ""
             )}
-            
+
           </div>
         </form>
       </main>
