@@ -1,0 +1,13 @@
+@media only screen and (min-width: 500px) {
+    .steps{
+        max-width: 400px;
+    }
+    
+    .steps::after{
+        width: 19rem;
+    }
+    
+    .step{
+        min-width: 3rem;
+    }
+}
