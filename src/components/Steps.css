@@ -12,14 +12,14 @@
 .steps::after{
     content: "";
     width: 15rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #0191FF;
     position: absolute;
     top: 20px;
 }
 
 .step{
     text-align: center;
-    background-color: white;
+    background-color: rgb(35, 35, 35);
     z-index: 1;
     min-width: 2.1rem;
     padding: .5rem;
@@ -28,12 +28,14 @@
 .step svg{
     font-size: 1.6rem;
     margin-bottom: .2rem;
+    color: #333;
 }
+
 
 .active{
     font-weight: bold;
 }
 
 .active svg{
-    fill: #04c004;
+    fill: #0191FF;
 }

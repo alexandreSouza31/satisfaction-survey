@@ -1,6 +1,8 @@
 .app{
     padding: 2rem;
+    background-color: #363636;
 }
+
 /*header*/
 .header{
     text-align: center;
@@ -10,13 +12,27 @@
 .header h2{
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.header p{
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji-glasses{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    fill: #67BDFF;
 }
 
 /*form*/
 .form-container{
     max-width: 600px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(35, 35, 35);
     padding: 1.5rem;
     box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 4px;
@@ -40,7 +56,7 @@
 
 label{
     font-weight: bold;
-    color: #777;
+    color: #ccc;
     font-size: 0.9rem;
 }
 
@@ -48,7 +64,9 @@ input,textarea{
     padding: 0.6rem;
     border: none;
     border-radius: 3px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0; */
+    background-color: rgb(99, 99, 99, 0.2);
+    color: #ccc;
 }
 
 textarea{
@@ -70,12 +88,13 @@ textarea{
     gap:0.5rem;
     align-items: center;
     border-radius: 4px;
-    background-color: #dfdfdf;
+    background-color: rgb(99, 99, 99, 0.2);
+    color: #ccc;
     cursor: pointer;
     border: none;
     transition: 0.3s;
 }
 
 .actions button:hover{
-    background-color: #ccc;
+    background-color: #0191FF;
 }

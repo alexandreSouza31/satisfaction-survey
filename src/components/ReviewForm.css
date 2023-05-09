@@ -11,11 +11,11 @@
 }
 
 .score-container svg:hover{
-    fill: #04c004;
+    fill: #0191FF;
 }
 
 .score-container input:checked ~ svg{/*til faz referência ao irmão, pq nesse caso o input e o emoji são irmãos*/
-    fill: #04c004;
+    fill: #0191FF;
 }
 
 .radio-container{

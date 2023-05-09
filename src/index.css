@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #333;
 }
 
 p{
@@ -12,5 +11,5 @@ p{
 
 body{
   height: 100vh;
-  background-color:#f9fafc;
+  background-color:#363636;
 }

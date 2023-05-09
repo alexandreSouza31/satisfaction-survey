@@ -4,23 +4,28 @@
 
 .confirm-container h2{
     margin-bottom: 1rem;
+    color: #ccc;
 }
 
 .confirm-container p{
     font-size: .9rem;
     margin-bottom: .5rem;
+    color: #ccc;
 }
 
 .confirm-container h3{
     margin: 1rem 0;
+    color: #ccc;
 }
 
 .review-data{
     text-align: left;
+    word-break: break-all;
 }
 
 .review-data svg{
     margin-left: 5px;
+    color: #0191FF;
 }
 
 .review-data span{

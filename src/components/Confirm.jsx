@@ -22,14 +22,14 @@ const Confirm = ({data}) => {
                 A sua opinião é muito importante, em breve você receberá um cupom de 
                 10% para sua próxima compra!
             </p>
-            <p>Para concluir sua avaliação clique no botão <b>Enviar</b> abaixo.</p>
-            <h3>Aqui está o resumo da sua avaliação {data.name}:</h3>
+            <p>Para concluir sua avaliação clique no botão <b>Avançar</b> abaixo.</p>
+            <h3>Aqui está o resumo da sua avaliação, <i>{data.name}</i>:</h3>
             <p className="review-data">
                 <span>Satisfação com o produto:</span>
                 {emojiData[data.review]}
             </p>
             <p className="review-data">
-                <span>Comentário:</span>
+                <span>Comentário: </span>
                 {data.comment}
             </p>
         </div>

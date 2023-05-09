@@ -1,3 +1,12 @@
+h2,span{
+    color: #ccc;
+}
+
 .thanks-container p{
     margin: 2rem auto;
+    color: #ccc;
+}
+
+.thanks-name{
+    color:#67BDFF
 }
