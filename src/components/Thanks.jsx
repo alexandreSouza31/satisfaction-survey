@@ -1,4 +1,4 @@
-import "./Thanks.css";
+import "./style_components/Thanks.css";
 
 const Thanks = ({data}) => {
     return (

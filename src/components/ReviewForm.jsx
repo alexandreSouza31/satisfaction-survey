@@ -6,7 +6,7 @@ import {
     BsFillEmojiFrownFill,
 } from "react-icons/bs";
 
-import "./ReviewForm.css";
+import "./style_components/ReviewForm.css";
 const ReviewForm = ({data, updateFieldHandler}) => {
     return (
         <div className="review-form">

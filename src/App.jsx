@@ -12,7 +12,7 @@ import Steps from "./components/Steps";
 import { useForm } from "./hooks/useForm";
 import { useState } from "react";//serve pra fazer a alteração nos dados
 
-import './App.css';
+import './styles/App.css';
 
 const formTemplate = {
   name: "", email: "", review: "", comment: ""

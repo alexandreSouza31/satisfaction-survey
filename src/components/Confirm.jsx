@@ -5,7 +5,7 @@ import {
     BsFillEmojiFrownFill,
 } from "react-icons/bs";
 
-import "./Confirm.css";
+import "./style_components/Confirm.css";
 
 const emojiData = {
     usatisfied:<BsFillEmojiFrownFill/>,

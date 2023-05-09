@@ -1,6 +1,6 @@
 import React from "react";
-import "./Steps.css";
-import "./Media-query.css";
+import "./style_components/Steps.css";
+import "./style_components/Media-query.css";
 import { AiOutlineUser, AiOutlineStar } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 import { AiOutlineAlert } from "react-icons/ai";
