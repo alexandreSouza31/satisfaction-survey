@@ -79,8 +79,13 @@ Mobile first, clean code, refactoring, ReactJS, dark mode.
 ### How to run the code? 
 
 
-you can download it to your machine, open the code editor terminal, go into the root folder of the project and type npm run dev. Wait for the terminal to complete and as soon as an address like 'localhost:5500/' or equivalent is shown, copy and paste that address into your browser.
+1 - Cloning/downloading the project
 
+Enter the command```git clone https://github.com/alexandreSouza31/satisfaction-survey``` in the terminal, or if you prefer, download it by clicking on the green button called "Code" in this project's repository, and then, "Download zip.
+
+2 - Open the code editor terminal, go into the root folder of the project and type npm run dev. Wait for the terminal to complete and as soon as an address like 'localhost:5500/' or equivalent is shown, copy and paste that address into your browser.
+
+#### Deploy
 
 If you want to test the app without downloading the code:
 - [Vercel](https://satisfaction-survey.vercel.app/)
